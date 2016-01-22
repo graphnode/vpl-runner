@@ -1,18 +1,25 @@
 {
-    "name": "vpl-runner",
-    "private": true,
-    "version": "1.0.1",
-    "description": "Experimental code runner for future visual programming language based on JSON.",
-    "scripts": {
-        "test": "node ./node_modules/mocha/bin/mocha"
-    },
-    "keywords": [],
-    "author": "Diogo Gomes <dgomes@graphnode.com>",
-    "license": "MIT",
-    "dependencies": {
-        "tv4": "^1.2.7"
-    },
-    "devDependencies": {
-        "mocha": "^2.3.4"
-    }
+  "name": "vpl-runner",
+  "private": true,
+  "version": "1.0.1",
+  "description": "Experimental code runner for future visual programming language based on JSON.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/graphnode/vpl-runner"
+  },
+  "scripts": {
+    "test": "node ./node_modules/mocha/bin/_mocha",
+    "test-coverage": "node ./node_modules/istanbul/lib/cli cover ./node_modules/mocha/bin/_mocha --report lcovonly -- -R spec && node ./node_modules/coveralls/bin/coveralls.js < ./coverage/lcov.info"
+  },
+  "keywords": [],
+  "author": "Diogo Gomes <dgomes@graphnode.com>",
+  "license": "MIT",
+  "dependencies": {
+    "tv4": "^1.2.7"
+  },
+  "devDependencies": {
+    "coveralls": "^2.11.6",
+    "istanbul": "^0.4.2",
+    "mocha": "^2.3.4"
+  }
 }
