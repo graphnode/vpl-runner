@@ -4,13 +4,16 @@
     },
     "processes": {
         "Read File": {
-            "component": "ReadFile",
-            "metadata": {
-
-            }
+            "component": "ReadFile"
         },
         "Split by Lines": {
-            "component": "SplitStr"
+            "component": "SplitString"
+        },
+        "Get Array Size": {
+            "component": "CountArray"
+        },
+        "Print to Console": {
+            "component": "ConsolePrint"
         }
     },
     "connections": [
@@ -28,6 +31,7 @@
                 "port": "source"
             }
         },
+        
         {
             "src": {
                 "process": "Read File",
@@ -35,6 +39,26 @@
             },
             "tgt": {
                 "process": "Split by Lines",
+                "port": "in"
+            }
+        },
+        {
+            "src": {
+                "process": "Split by Lines",
+                "port": "out"
+            },
+            "tgt": {
+                "process": "Get Array Size",
+                "port": "in"
+            }
+        },
+        {
+            "src": {
+                "process": "Get Array Size",
+                "port": "out"
+            },
+            "tgt": {
+                "process": "Print to Console",
                 "port": "in"
             }
         }
