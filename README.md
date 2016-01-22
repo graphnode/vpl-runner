@@ -1,6 +1,6 @@
 # VPL-Runner
 
-[![Build Status](https://travis-ci.org/graphnode/vpl-runner.svg)](https://travis-ci.org/graphnode/vpl-runner.svg)
+[![Build Status](https://travis-ci.org/graphnode/vpl-runner.svg?branch=master)](https://travis-ci.org/graphnode/vpl-runner)
 [![Dependency Status](https://david-dm.org/graphnode/vpl-runner.svg)](https://david-dm.org/graphnode/vpl-runner)
 [![devDependency Status](https://david-dm.org/graphnode/vpl-runner/dev-status.svg)](https://david-dm.org/graphnode/vpl-runner#info=devDependencies)
 ___
