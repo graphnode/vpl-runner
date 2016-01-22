@@ -1,5 +1,7 @@
-var runner = require('./lib/runner'),
-    logger = require('./lib/logger');
+#! /usr/bin/env node
+
+var runner = require('../lib/runner'),
+    logger = require('../lib/logger');
     
 var args = process.argv.slice(2);
 
