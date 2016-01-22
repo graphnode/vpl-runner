@@ -1,0 +1,17 @@
+{
+    "properties": {
+        "name": "This is a bad graph that is valid JSON but invalid graph structure."
+    },
+    "procets": {
+        
+    },
+    "connections": [
+        {
+            "data": "stuff",
+            "tgt": {
+                "process": "Non-Existing Process",
+                "port": "in"
+            }
+        }
+    ]
+}

@@ -1,0 +1,32 @@
+{
+    "properties": {
+        "name": "This graph loses some data in unconnected processes."
+    },
+    "processes": {
+        "Read File": {
+            "component": "ReadFile"
+        },
+        "Get File Size": {
+            "component": "GetLength"
+        }
+    },
+    "connections": [
+        {
+            "data": "package.json",
+            "tgt": {
+                "process": "Read File",
+                "port": "source"
+            }
+        },
+        {
+            "src": {
+                "process": "Read File",
+                "port": "out"
+            },
+            "tgt": {
+                "process": "Get File Size",
+                "port": "in"
+            }
+        }
+    ]
+}

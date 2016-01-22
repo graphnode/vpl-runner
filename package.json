@@ -9,13 +9,15 @@
   },
   "scripts": {
     "test": "node ./node_modules/mocha/bin/_mocha",
+    "coverage": "node ./node_modules/istanbul/lib/cli cover ./node_modules/mocha/bin/_mocha",
     "test-coverage": "node ./node_modules/istanbul/lib/cli cover ./node_modules/mocha/bin/_mocha --report lcovonly -- -R spec && node ./node_modules/coveralls/bin/coveralls.js < ./coverage/lcov.info"
   },
   "keywords": [],
   "author": "Diogo Gomes <dgomes@graphnode.com>",
   "license": "MIT",
   "dependencies": {
-    "tv4": "^1.2.7"
+    "tv4": "^1.2.7",
+    "winston": "^2.1.1"
   },
   "devDependencies": {
     "coveralls": "^2.11.6",

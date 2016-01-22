@@ -1,0 +1,19 @@
+{
+    "properties": {
+        "name": "This graph is missing a port. Should be 'source' instead of 'in'."
+    },
+    "processes": {
+        "Read File": {
+            "component": "ReadFile"
+        }
+    },
+    "connections": [
+        {
+            "data": "package.json",
+            "tgt": {
+                "process": "Read File",
+                "port": "in"
+            }
+        }
+    ]
+}

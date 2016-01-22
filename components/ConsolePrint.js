@@ -1,3 +1,5 @@
+var logger = require('../lib/logger');
+
 module.exports = function () {
     return {
         description: "This component receives a object and prints it on the console.",
@@ -6,7 +8,7 @@ module.exports = function () {
             "in": { 
                 datatype: 'all',
                 onData: (component, data) => {
-                    console.log(data);
+                    logger.info(data);
                 }
             }
         }

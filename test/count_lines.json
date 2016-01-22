@@ -10,7 +10,7 @@
             "component": "SplitString"
         },
         "Get Array Size": {
-            "component": "CountArray"
+            "component": "GetLength"
         },
         "Print to Console": {
             "component": "ConsolePrint"
