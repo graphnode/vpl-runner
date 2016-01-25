@@ -1,0 +1,25 @@
+{
+    "properties": {
+        "name": "Prints the Public IP to Console"
+    },
+    "processes": {
+        "Get IP": {
+            "component": "./components/GetPublicIP.js"
+        },
+        "Print to Console": {
+            "component": "./components/ConsolePrint.js"
+        }
+    },
+    "connections": [
+        {
+            "src": {
+                "process": "Get IP",
+                "port": "out"
+            },
+            "tgt": {
+                "process": "Print to Console",
+                "port": "in"
+            }
+        }
+    ]
+}

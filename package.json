@@ -1,7 +1,7 @@
 {
   "name": "vpl-runner",
   "private": true,
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Experimental code runner for future visual programming language based on JSON.",
   "repository": {
     "type": "git",

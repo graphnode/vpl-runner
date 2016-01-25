@@ -4,10 +4,10 @@
     },
     "processes": {
         "Read File": {
-            "component": "ReadFile"
+            "component": "./components/ReadFile.js"
         },
         "Get File Size": {
-            "component": "GetLength"
+            "component": "./components/GetLength.js"
         }
     },
     "connections": [

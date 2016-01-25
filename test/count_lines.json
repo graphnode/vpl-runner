@@ -4,16 +4,16 @@
     },
     "processes": {
         "Read File": {
-            "component": "ReadFile"
+            "component": "./components/ReadFile.js"
         },
         "Split by Lines": {
-            "component": "SplitString"
+            "component": "./components/SplitString.js"
         },
         "Get Array Size": {
-            "component": "GetLength"
+            "component": "./components/GetLength.js"
         },
         "Print to Console": {
-            "component": "ConsolePrint"
+            "component": "./components/ConsolePrint.js"
         }
     },
     "connections": [

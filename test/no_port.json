@@ -4,7 +4,7 @@
     },
     "processes": {
         "Read File": {
-            "component": "ReadFile"
+            "component": "./components/ReadFile.js"
         }
     },
     "connections": [
