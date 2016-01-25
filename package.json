@@ -20,6 +20,7 @@
   "author": "Diogo Gomes <dgomes@graphnode.com>",
   "license": "MIT",
   "dependencies": {
+    "async": "^1.5.2",
     "tv4": "^1.2.7",
     "winston": "^2.1.1"
   },
